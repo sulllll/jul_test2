@@ -1,8 +1,8 @@
 /* General Body Styles */
 body {
-    font-family: "Open Sans", sans-serif;
-    background-color: #0A192F;
-    color: #E5E7EB;
+    font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+    background-color: #0A192F; /* Dark blue background */
+    color: #E5E7EB; /* Light gray text */
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -10,17 +10,23 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #1F2937;
+    background-color: #1F2937; /* Darker gray-blue */
     padding: 1em 0;
     text-align: center;
-    border-bottom: 2px solid #00FFFF;
+    border-bottom: 2px solid #00FFFF; /* Accent color for border - will be cyan/teal */
+    /* Neon Effects Start */
+    box-shadow: 0 2px 10px #00FFFF;
+    /* Neon Effects End */
 }
 
 header h1 {
-    font-family: "Exo 2", sans-serif;
     color: #E5E7EB;
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.2em; /* Slightly adjusted for Korean fonts */
+    font-weight: bold; /* Make header h1 bold for better neon effect */
+    /* Neon Effects Start */
+    text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 12px #00FFFF, 0 0 16px #00FFFF, 0 0 20px #00FFFF, 0 0 24px #00FFFF;
+    /* Neon Effects End */
 }
 
 /* Navigation Styles */
@@ -43,48 +49,56 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: #00FFFF;
-    border-bottom: 1px solid #00FFFF;
+    color: #00FFFF; /* Accent color for hover/active */
+    /* border-bottom: 1px solid #00FFFF; */ /* Optional: underline effect */
+    /* Neon Effects Start */
+    text-shadow: 0 0 3px #fff, 0 0 6px #00FFFF, 0 0 9px #00FFFF;
+    /* Neon Effects End */
 }
 
 /* Main Content Area */
 main {
-    max-width: 1000px;
+    max-width: 960px; /* Standard max-width */
     margin: 20px auto;
     padding: 20px;
-    background-color: #1F2937;
+    background-color: #111827; /* Slightly lighter dark shade for main content background */
     border-radius: 8px;
 }
 
 main h1 {
-    font-family: "Exo 2", sans-serif;
-    color: #22D3EE;
-    font-size: 2em;
-    border-bottom: 1px solid #22D3EE;
+    color: #38BDF8; /* Light blue accent for main page headings */
+    font-size: 1.8em; /* Slightly adjusted for Korean fonts */
+    border-bottom: 1px solid #38BDF8;
     padding-bottom: 0.3em;
     margin-bottom: 0.7em;
+    font-weight: bold; /* Ensure page titles are bold for neon */
+    /* Neon Effects Start */
+    text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 12px #38BDF8, 0 0 16px #38BDF8, 0 0 20px #38BDF8;
+    /* Neon Effects End */
+}
+
+main h2 {
+    color: #67E8F9; /* Cyan accent for section headings */
+    font-size: 1.5em; /* Slightly adjusted for Korean fonts */
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold; /* Ensure section titles are bold for neon */
+    /* Neon Effects Start */
+    text-shadow: 0 0 2px #fff, 0 0 5px #67E8F9, 0 0 8px #67E8F9;
+    /* Neon Effects End */
 }
 
 main p {
     margin-bottom: 1em;
 }
 
-main h2 {
-    color: #22D3EE; /* Accent color for h2 headings in main */
-    margin-bottom: 0.8em; /* Additional bottom margin for h2 */
-    font-family: "Exo 2", sans-serif; /* Ensure h2 also uses Exo 2 */
-}
-
 main a {
-    color: #00FFFF; /* Accent color for links in main */
-    text-decoration: none; /* Remove default underline */
+    color: #38BDF8; /* Light blue for links within main */
 }
 
 main a:hover {
-    text-decoration: underline; /* Underline on hover for links in main */
-    /* Alternatively, a brightness change could be:
-    filter: brightness(1.2); 
-    */
+    color: #00FFFF;
+    text-decoration: underline;
 }
 
 /* Footer Styles */
@@ -92,21 +106,25 @@ footer {
     text-align: center;
     padding: 1em 0;
     background-color: #1F2937;
-    color: #E5E7EB;
-    border-top: 1px solid #00FFFF;
+    color: #9CA3AF; /* Slightly muted light gray for footer */
+    border-top: 1px solid #00FFFF; /* Accent color for border */
     margin-top: 30px;
     font-size: 0.9em;
+    /* Neon Effects Start */
+    box-shadow: 0 -2px 10px #00FFFF;
+    /* Neon Effects End */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     nav ul li {
         display: block;
         margin: 10px 0;
+        text-align: center;
     }
 
     main {
@@ -115,6 +133,10 @@ footer {
     }
 
     main h1 {
-        font-size: 1.8em;
+        font-size: 1.6em;
+    }
+
+    main h2 {
+        font-size: 1.3em;
     }
 }
